@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { CursosServices } from './cursos/cursos.service';
 import { CriarCursoModule } from './criar-curso/criar-curso.module';
 import { CursosModule } from './cursos/cursos.module';
+import { LogService } from './log.service';
 
 
 
@@ -23,7 +24,7 @@ import { CursosModule } from './cursos/cursos.module';
     CriarCursoModule,
     CursosModule
   ],
-  //providers: [CursosServices],
+  providers: [LogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
